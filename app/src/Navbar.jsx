@@ -3,7 +3,8 @@ import App from "./App";
 
 const Navbar = () => {
   return (
-    "Navbar"
+   <div style={{background: "blue"}}> "Navbar"
+   </div>
   )
 };
 

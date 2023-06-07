@@ -1,10 +1,10 @@
 import App from "./App";
 import React from "react";
 
-const Homepage = () => {
+const HomeList = () => {
   return(
     "Add new games to your library"
   )
 }
 
-export default Homepage;
+export default HomeList;

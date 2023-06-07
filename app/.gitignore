@@ -22,10 +22,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-<<<<<<< HEAD
-#api key
-0d805d440c37423a87ab99e68d3a3bdd
-=======
+.env
 
-dcc4c526178f4ba68c0f0905729b2a92
->>>>>>> 4ae503a (npm install)

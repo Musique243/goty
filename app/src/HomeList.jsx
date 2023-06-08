@@ -1,6 +1,5 @@
-import App from "./App";
 import React, {useEffect, useState} from "react";
-import axios from "axios"
+
 
 
 const HomeList = () => {
@@ -16,6 +15,7 @@ const HomeList = () => {
   const [games, setGames] = useState([])
   return(
     <div>
+      <h2>Suggested Games:</h2>
     <ul>
     {
       games.map(game => (

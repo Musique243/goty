@@ -1,10 +1,14 @@
 import React from "react";
-import App from "./App";
+
 
 const Navbar = () => {
   return (
-   <div style={{background: "blue"}}> "Navbar"
-   </div>
+    <>
+     <h3 style={{background: "blue"}}> Home | Search | Currently Playing | Archived Games | Backlog
+   </h3>
+
+    </>
+
   )
 };
 

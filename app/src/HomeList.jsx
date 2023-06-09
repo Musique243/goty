@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from "react";
-
-
+import { GameList, GameItem, GameTitle, GameImage } from "./Styled";
 
 const HomeList = () => {
   useEffect(() => {
@@ -16,17 +15,25 @@ const HomeList = () => {
   return(
     <div>
       <h2>Suggested Games:</h2>
-    <ul>
-    {
+      <GameList>
+  {games.map(game => (
+    <GameItem key={game.id}>
+      <GameTitle>{game.name}</GameTitle>
+      <GameImage src={game.background_image} alt="game" />
+    </GameItem>
+  ))}
+</GameList>
+    {/* <ul> */}
+    {/* {
       games.map(game => (
         <li key={game.id}>
 
           <h3>{game.name}</h3>
           <img style={{ width: 400, height: 400 }} src={game.background_image} alt="game"/>
-        </li>
+         </li>
       ))
-    }
-    </ul>
+    } */}
+    {/* </ul> */}
   </div>
   )
 }

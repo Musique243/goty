@@ -1,16 +1,24 @@
 
-import './App.css';
+// import './App.css';
 import HomeList from './HomeList.jsx';
 import Navbar from './Navbar';
-
+import { Container, NavBar, Main, ContentBox, Content1, Content2, Content3 } from './Styled';
 function App() {
   return (
-    <div className="App">
-      <h1 style={{background: "grey"}}>GOTY APP</h1>
-      <image src="https://cdn.vectorstock.com/i/1000x1000/74/14/pixel-art-goat-vector-15317414.webp"/>
-      <Navbar />
-        <HomeList />
-    </div>
+
+    <Container>
+    <NavBar>
+      <Navbar/>
+    </NavBar>
+    <Main>
+      <HomeList/>
+    </Main>
+    <ContentBox>
+    <Content1>Content1</Content1>
+    <Content2>Content2</Content2>
+    <Content3>Content3</Content3>
+    </ContentBox>
+    </Container>
   );
 }
 

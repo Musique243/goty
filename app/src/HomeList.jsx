@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
-import { GameList, GameItem, GameTitle, GameImage } from "./Styled";
+import { Main, GameList, GameItem, GameTitle, GameImage } from "./Styled";
+import { Link } from 'react-router-dom';
 
 const HomeList = () => {
   useEffect(() => {
@@ -12,8 +13,10 @@ const HomeList = () => {
     .then(({results}) => setGames(results))
   };
   const [games, setGames] = useState([])
+  
   return(
-    <div>
+
+    <Main>
       <h2>Suggested Games:</h2>
       <GameList>
   {games.map(game => (
@@ -23,18 +26,8 @@ const HomeList = () => {
     </GameItem>
   ))}
 </GameList>
-    {/* <ul> */}
-    {/* {
-      games.map(game => (
-        <li key={game.id}>
+  </Main>
 
-          <h3>{game.name}</h3>
-          <img style={{ width: 400, height: 400 }} src={game.background_image} alt="game"/>
-         </li>
-      ))
-    } */}
-    {/* </ul> */}
-  </div>
   )
 }
 

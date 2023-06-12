@@ -25,7 +25,7 @@ const Container = styled.div`
   }
   color: white;
 `;
-const NavBar = styled.nav`
+const Nav = styled.nav`
   background: #3a3a55;
   grid-area: nav;
   padding: 0.25rem;
@@ -88,4 +88,4 @@ const GameImage = styled.img`
   height: 400px;
 `;
 
-export {Container, NavBar, Main, SideBar, ContentBox, Content1, Content2, Content3, Footer, GameList, GameItem, GameTitle, GameImage};
+export {Container, Nav, Main, SideBar, ContentBox, Content1, Content2, Content3, Footer, GameList, GameItem, GameTitle, GameImage};

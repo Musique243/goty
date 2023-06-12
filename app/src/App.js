@@ -2,23 +2,25 @@
 // import './App.css';
 import HomeList from './HomeList.jsx';
 import Navbar from './Navbar';
-import { Container, NavBar, Main, ContentBox, Content1, Content2, Content3 } from './Styled';
+import Search from './Search';
+import GameDetail from './GameDetail';
+import { Container } from './Styled';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 function App() {
   return (
 
-    <Container>
-    <NavBar>
-      <Navbar/>
-    </NavBar>
-    <Main>
-      <HomeList/>
-    </Main>
-    <ContentBox>
-    <Content1>Content1</Content1>
-    <Content2>Content2</Content2>
-    <Content3>Content3</Content3>
-    </ContentBox>
-    </Container>
+    // <Container>
+    <Router>
+     <Navbar />
+     {/* <HomeList /> */}
+    <Routes>
+      <Route exact path='/search' component={Search} />
+      <Route exact path='/game/:name' component={GameDetail} />
+    </Routes>
+  </Router>
+   
+
   );
 }
 

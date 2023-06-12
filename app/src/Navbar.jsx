@@ -1,13 +1,16 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
+import { Nav } from "./Styled";
 
 const Navbar = () => {
   return (
-    <>
-     <h3 style={{}}> Home | Search | Currently Playing | Archived Games | Backlog
-   </h3>
+    <Nav>
 
-    </>
+   <Link style={{color: 'white'}} to ={'/search'}>
+    Search
+   </Link>
+
+    </Nav>
 
   )
 };
